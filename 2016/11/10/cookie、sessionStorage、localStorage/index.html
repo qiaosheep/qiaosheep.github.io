@@ -100,7 +100,7 @@
 <meta property="og:site_name" content="qiao Sheep">
 <meta property="og:description" content="Web Storage API&amp;emsp;&amp;emsp;sessionStorage 和 localStorage 是HTML5 Web Storage API 提供的，可以方便的在web请求之间保存数据。有了本地数据，就可以避免数据在浏览器和服务器间不必要地来回传递 Web Storage API优点： &amp;emsp;&amp;emsp;a) 减少网络流量：一旦数据保存在本地后，就可以避免再向服务器请求数据">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-07-28T00:28:23.004Z">
+<meta property="og:updated_time" content="2017-07-28T05:35:06.029Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="cookie、sessionStorage、localStorage三者区别">
 <meta name="twitter:description" content="Web Storage API&amp;emsp;&amp;emsp;sessionStorage 和 localStorage 是HTML5 Web Storage API 提供的，可以方便的在web请求之间保存数据。有了本地数据，就可以避免数据在浏览器和服务器间不必要地来回传递 Web Storage API优点： &amp;emsp;&amp;emsp;a) 减少网络流量：一旦数据保存在本地后，就可以避免再向服务器请求数据">
@@ -322,8 +322,7 @@
       
         <h2 id="Web-Storage-API"><a href="#Web-Storage-API" class="headerlink" title="Web Storage API"></a>Web Storage API</h2><p>&emsp;&emsp;sessionStorage 和 localStorage 是HTML5 Web Storage API 提供的，可以方便的在web请求之间保存数据。有了本地数据，就可以避免数据在浏览器和服务器间不必要地来回传递</p>
 <p>Web Storage API优点：</p>
-<p>&emsp;&emsp;a) 减少网络流量：一旦数据保存在本地后，就可以避免再向服务器请求数据，因此减少不必要的数据请求，减少数据在浏览器和服务器间不必要地来回传递。</p>
-<p>&emsp;&emsp;b) 快速显示数据：性能好，从本地读数据比通过网络从服务器获得数据快得多，本地数据可以即时获得。再加上网页本身也可以有缓存，因此整个页面和数据都在本地的话，可以立即显示。</p>
+<p>&emsp;&emsp;a) 减少网络流量：一旦数据保存在本地后，就可以避免再向服务器请求数据，因此减少不必要的数据请求，减少数据在浏览器和服务器间不必要地来回传递。<br><a id="more"></a><br>&emsp;&emsp;b) 快速显示数据：性能好，从本地读数据比通过网络从服务器获得数据快得多，本地数据可以即时获得。再加上网页本身也可以有缓存，因此整个页面和数据都在本地的话，可以立即显示。</p>
 <p>&emsp;&emsp;c) 临时存储：很多时候数据只需要在用户浏览一组页面期间使用，关闭窗口后数据就可以丢弃了，这种情况使用sessionStorage非常方便。</p>
 <h2 id="cookie、sessionStorage、localStorage相同点"><a href="#cookie、sessionStorage、localStorage相同点" class="headerlink" title="cookie、sessionStorage、localStorage相同点"></a>cookie、sessionStorage、localStorage相同点</h2><p>&emsp;&emsp;都是在浏览器端保存数据，且同源的</p>
 <h2 id="cookie、sessionStorage、localStorage不同点"><a href="#cookie、sessionStorage、localStorage不同点" class="headerlink" title="cookie、sessionStorage、localStorage不同点"></a>cookie、sessionStorage、localStorage不同点</h2><p>&emsp;&emsp;a) cookie数据始终在同源的http请求中携带（即使不需要），即cookie在浏览器和服务器间来回传递。而sessionStorage和localStorage不会自动把数 据发给服务器，仅在本地保存。cookie数据还有路径（path）的概念，可以限制cookie只属于某个路径下；</p>
