@@ -257,6 +257,129 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/28/cookie、sessionStorage、localStorage/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="qiao Sheep">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="qiao Sheep">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/07/28/cookie、sessionStorage、localStorage/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-28T08:15:58+08:00">
+                2017-07-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="cookie、sessionStorage、localStorage三者区别"><a href="#cookie、sessionStorage、localStorage三者区别" class="headerlink" title="cookie、sessionStorage、localStorage三者区别"></a>cookie、sessionStorage、localStorage三者区别</h1><h2 id="Web-Storage-API"><a href="#Web-Storage-API" class="headerlink" title="Web Storage API"></a>Web Storage API</h2><p>&emsp;&emsp;sessionStorage 和 localStorage 是HTML5 Web Storage API 提供的，可以方便的在web请求之间保存数据。有了本地数据，就可以避免数据在浏览器和服务器间不必要地来回传递</p>
+<p>Web Storage API优点：</p>
+<p>&emsp;&emsp;a) 减少网络流量：一旦数据保存在本地后，就可以避免再向服务器请求数据，因此减少不必要的数据请求，减少数据在浏览器和服务器间不必要地来回传递。</p>
+<p>&emsp;&emsp;b) 快速显示数据：性能好，从本地读数据比通过网络从服务器获得数据快得多，本地数据可以即时获得。再加上网页本身也可以有缓存，因此整个页面和数据都在本地的话，可以立即显示。</p>
+<p>&emsp;&emsp;c) 临时存储：很多时候数据只需要在用户浏览一组页面期间使用，关闭窗口后数据就可以丢弃了，这种情况使用sessionStorage非常方便。</p>
+<h2 id="cookie、sessionStorage、localStorage相同点"><a href="#cookie、sessionStorage、localStorage相同点" class="headerlink" title="cookie、sessionStorage、localStorage相同点"></a>cookie、sessionStorage、localStorage相同点</h2><p>&emsp;&emsp;都是在浏览器端保存数据，且同源的</p>
+<h2 id="cookie、sessionStorage、localStorage不同点"><a href="#cookie、sessionStorage、localStorage不同点" class="headerlink" title="cookie、sessionStorage、localStorage不同点"></a>cookie、sessionStorage、localStorage不同点</h2><p>&emsp;&emsp;a) cookie数据始终在同源的http请求中携带（即使不需要），即cookie在浏览器和服务器间来回传递。而sessionStorage和localStorage不会自动把数 据发给服务器，仅在本地保存。cookie数据还有路径（path）的概念，可以限制cookie只属于某个路径下；</p>
+<p>&emsp;&emsp;b) 存储大小限制也不同，cookie数据不能超过4k，同时因为每次Http请求都会携带cookie，所以cookie只适合保存很小的数据，比如会话标识。 sessionStroage和localstroage虽然也有大小限制，但是比cookie大很多，可以达到5M或更大；</p>
+<p>&emsp;&emsp;c) 数据有效期也不同，sessionStroage仅在当前浏览器窗口关闭前有效（即同源同窗口下有效）；localStroage始终有效，窗口或者浏览器关闭也一直保 存；cookie在设置的有效期内有效，不管窗口或者浏览器是否关闭；</p>
+<p>&emsp;&emsp;d) 作用域不同，sessionStroage不能在不同的浏览器窗口共享，即使是同一个页面；localStroage在所有的同源窗口中都是共享的；cookie也是在所有的同源窗口中共享的；</p>
+<p>&emsp;&emsp;e) Web Storage 支持事件通知机制，可以将数据更新的通知发送给监听者。</p>
+<p>&emsp;&emsp;f) Web Storage 的 api 接口使用更方便。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/23/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -414,7 +537,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
